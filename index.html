@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Amador</title>
+    <meta name="author" content="David Amador" />
+    <meta name="description" content="WWD 131 - Dynamic Web Fundamentals
+    David Amador
+    Home Page with personal information about the author" />
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - David Amador</h1>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.byui.instructure.com">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card" id="about">
+            <div class="title">
+                <h3>About Me</h3>
+            </div>
+            <div id="content">
+                <p>My name is David Amador. I live in Rexburg, Idaho. I am a student in the Virtual Design and
+                    Construction program
+                    with a minor in computer programming. I am a junior in college, expecting to graduate in December
+                    next year. I enjoy the outdoors, music, and movies. Some of my favorite activities are hiking,
+                    swimming,
+                    playing the guitar, and ropes course.
+                </p>
+            </div>
+            <img id="profile" src="images/profile_pic.jpg" alt="Profile photo">
+            <img id="flag" src="images/idaho-flag.jpg" alt="Idaho flag">
+            <div id="line">
+                <h3> Rexburg, Idaho</h3>
+                <hr width="80%" size="2">
+            </div>
+            <div id="content-1">
+                <p>
+                    <br>Known as “America's Family Community,” Rexburg, Idaho, is the 4th fastest-growing micropolitan
+                    area
+                    in the United States.
+                    Just 20 minutes from Idaho Falls, Rexburg is Idaho's most family-friendly
+                    stop when traveling to Yellowstone National Park, which is only an hour and a half away.
+                </p>
+            </div>
+        </div>
+        <div class="card" id="resources">
+            <div class="title">
+                <h3>Web Dev Resources</h3>
+            </div>
+            <div id="weblist">
+                <ul>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/w3css/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/topic/css/">Udemy</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | David Amador | Idaho</p>
+        <p> Last Modified on <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+    </script>
+</body>
+
+</html>

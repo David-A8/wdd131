@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Patrick+Hand&family=Playpen+Sans:wght@200;300;400;500;600;700&family=Tilt+Neon&display=swap');
+
+:root {
+    --heading-font: "Playpen Sans", Calistoga;
+    --body-font: "Tilt Neon", "Patric Hand";
+    --body-font1: "Patric Hand"
+}
+
+body {
+    background-color: beige;
+    font-family: var(--body-font);
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(58, 51, 51, 60%);
+}
+
+nav a {
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #E0E0E0;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+header {
+    background-color: maroon;
+    text-align: center;
+    color: rgb(241, 241, 242);
+    margin: 0px;
+    font-family: var(--heading-font);
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    margin: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+#about {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+
+#resources {
+    grid-column: 2/3;
+}
+
+#resources ul {
+    padding-top: 170px;
+}
+
+.title {
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    color: rgb(241, 241, 242);
+    background-color: maroon;
+    padding: 5px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#profile {
+    height: 250px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+#flag {
+    height: 150px;
+    max-width: auto;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 30px;
+    padding-top: 65px;
+}
+
+#content {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 15px;
+    padding-right: 0px;
+}
+
+#content h3 {
+    text-align: center;
+}
+
+#content-1 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding-right: 15px;
+}
+
+#line {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
