@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --heading-font: Nunito;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(221, 179, 74);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-family: var(--heading-font);
+}
+
+header h1 {
+    font-size: 3rem;
+    grid-column: 1/2;
+    color: whitesmoke;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#photos {
+    display: grid;
+    grid-gap: 25px;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figcaption {
+    font-size: medium;
+    text-align: center;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(221, 179, 74);
+    color: #000;
+    text-align: right;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: rgb(221, 179, 74);
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: right;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    transition: 0.5s;
+    font-size: clamp(1.5rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: rgb(131, 97, 10);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "≡";
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(131, 97, 10);
+    padding: 20px;
+}
+
+
