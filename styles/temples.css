@@ -30,6 +30,10 @@ main h1 {
     text-align: center;
 }
 
+main h2 {
+    text-align: center;
+}
+
 main {
     width: 85%;
     margin: 0 auto;
@@ -129,5 +133,3 @@ footer {
     background-color: rgb(131, 97, 10);
     padding: 20px;
 }
-
-
