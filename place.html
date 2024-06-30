@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/place.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Amador</title>
+    <meta name="author" content="David Amador" />
+    <meta name="description" content="WWD 131 - Dynamic Web Fundamentals
+    David Amador
+    Website with general information about Puerto Rico and its weather." />
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Puerto Rico</h1>
+    </header>
+    <main>
+        <picture id="hero">
+            <source media="(min-width: 1200px)" srcset="images/puerto-rico.webp">
+            <img id="hero" src="images/puerto-rico-small.webp" alt="Puerto Rico image">
+        </picture>
+        <div id="data">
+            <h2>Data</h2>
+            <p><b>Area: </b>8,868 sq km</p>
+            <p><b>Population: </b>3,268,768</p>
+            <p><b>Capital: </b>San Juan</p>
+            <p><b>Languages: </b>Spanish, English</p>
+            <p><b>Currency: </b>American Dollar</p>
+            <p><b>Time zone: </b>UTC-4</p>
+            <p><b>Calling code: </b>+1</p>
+            <p><b>Internet TLD: </b>.pr</p>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="images/weather.svg">
+            <p id="temperature"><b>Temperature: </b></p>
+            <p><b>Conditions:</b> Sunny</p>
+            <p id="wind"><b>Wind: </b></p>
+            <p id="windChill"><b>Wind Chill: </b></p>
+            <script defer>
+                document.addEventListener("DOMContentLoaded", function () {
+
+                    const existingTemperature = document.getElementById("temperature").innerHTML;
+                    const existingWind = document.getElementById("wind").innerHTML;
+
+                    const updatedTemperature = `${existingTemperature} ${Weather.temperature}°F`;
+                    const updatedWind = `${existingWind} ${Weather.wind}km/h`;
+
+                    document.getElementById("temperature").innerHTML = updatedTemperature;
+                    document.getElementById("wind").innerHTML = updatedWind;
+                });
+            </script>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | David Amador | Idaho</p>
+        <p> Last Modified on <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+    </script>
+</body>
+
+</html>
