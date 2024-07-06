@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Amador</title>
+    <meta name="author" content="David Amador" />
+    <meta name="description" content="WWD 131 - Dynamic Web Fundamentals
+    David Amador
+    Temple album page showing several pictures from different temples around the world." />
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1 id="heading">Temples</h1>
+            <h2>Home</h2>
+        </div>
+        <div id="photos">
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | David Amador | Idaho</p>
+        <p> Last Modified on <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+    </script>
+</body>
+
+</html>
