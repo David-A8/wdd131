@@ -94,16 +94,24 @@ const temples = [
 
 createTempleCard(temples);
 
+const homepage = document.querySelector("#home");
 const oldtemples = document.querySelector("#old");
 const newtemples = document.querySelector("#new");
 const largetemples = document.querySelector("#large");
 const smalltemples = document.querySelector("#small");
+var heading = document.getElementById('heading');
+
+homepage.addEventListener("click", () => {
+    heading.textContent = 'Home';
+    createTempleCard(temples);
+})
 
 oldtemples.addEventListener("click", () => {
     const yearTemple = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(',')[0].trim(), 10);
         return year < 1900;
     })
+    heading.textContent = 'Old';
     createTempleCard(yearTemple);
 })
 
@@ -112,14 +120,17 @@ newtemples.addEventListener("click", () => {
         const year = parseInt(temple.dedicated.split(',')[0].trim(), 10);
         return year > 2000;
     })
+    heading.textContent = 'New';
     createTempleCard(yearTemple);
 })
 
 largetemples.addEventListener("click", () => {
+    heading.textContent = 'Large';
     createTempleCard(temples.filter(temple => temple.area > 90000))
 })
 
 smalltemples.addEventListener("click", () => {
+    heading.textContent = 'Small';
     createTempleCard(temples.filter(temple => temple.area < 100000))
 })
 
