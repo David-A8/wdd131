@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><span class="label">Reviews completed: </span><span class="reviews"></span></p>
+</body>
+
+<script>
+    const reviewsDisplay = document.querySelector(".reviews");
+
+    // Retrieve numReviews from localStorage, default to 0 if not set or invalid
+    let numReviews = window.localStorage.getItem("numReviews-ls");
+    numReviews = numReviews ? Number(numReviews) : 0;
+
+    // Display the count or a message based on numReviews
+    if (numReviews !== 0) {
+        reviewsDisplay.textContent = numReviews;
+    } else {
+        reviewsDisplay.textContent = `This is your first review.`;
+    }
+
+    // Increment numReviews for the current visit
+    numReviews++;
+
+    // Update localStorage with the incremented value
+    localStorage.setItem("numReviews-ls", numReviews);
+</script>
+
+</html>
