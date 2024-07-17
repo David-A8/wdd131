@@ -107,6 +107,7 @@ homepage.addEventListener("click", () => {
 })
 
 oldtemples.addEventListener("click", () => {
+    event.preventDefault();
     const yearTemple = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(',')[0].trim(), 10);
         return year < 1900;
@@ -116,6 +117,7 @@ oldtemples.addEventListener("click", () => {
 })
 
 newtemples.addEventListener("click", () => {
+    event.preventDefault();
     const yearTemple = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(',')[0].trim(), 10);
         return year > 2000;
@@ -125,11 +127,13 @@ newtemples.addEventListener("click", () => {
 })
 
 largetemples.addEventListener("click", () => {
+    event.preventDefault();
     heading.textContent = 'Large';
     createTempleCard(temples.filter(temple => temple.area > 90000))
 })
 
 smalltemples.addEventListener("click", () => {
+    event.preventDefault();
     heading.textContent = 'Small';
     createTempleCard(temples.filter(temple => temple.area < 100000))
 })
