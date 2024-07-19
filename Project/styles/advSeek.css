@@ -24,7 +24,7 @@ header {
 header h1 {
     grid-column: 1/2;
     color: rgb(245, 245, 245);
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     padding: 0;
 }
 
-#hero {
+#hero-img {
     width: 100%;
     height: auto;
 }
@@ -89,8 +89,8 @@ nav a {
 }
 
 .navigation a:hover,
-navigation a:active {
-    color: #E5EFFF;
+.navigation a:active {
+    color: #907b45;
     background-color: black;
 }
 
@@ -100,6 +100,36 @@ navigation a:active {
 
 #menu.show::before {
     content: "≡";
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#hero-msg {
+    font-family: var(--heading-font);
+    text-align: center;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    color: #fff;
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+
+#hero-box {
+    width: 100%;
+    height: auto;
+    grid-row: 1/4;
+    grid-column: 1/4;
 }
 
 @media only screen and (min-width: 40em) {
@@ -119,6 +149,10 @@ navigation a:active {
 
     #menu {
         display: none;
+    }
+
+    #hero-msg {
+        margin-top: 120px;
     }
 }
 
