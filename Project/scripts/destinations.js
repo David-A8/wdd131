@@ -1,3 +1,7 @@
+document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+let oLastModif = new Date(document.lastModified)
+document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+
 const destinations = [
     {
         destination: "San Francisco",
@@ -104,7 +108,7 @@ function createDestinationCard(filteredDestinations) {
     document.getElementById("cards").innerHTML = "";
     filteredDestinations.forEach(place => {
         let card = document.createElement("section");
-        let location = document.createElement("h3");
+        let location = document.createElement("h2");
         let state = document.createElement("p");
         let region = document.createElement("p");
         let climate = document.createElement("p");
