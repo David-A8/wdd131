@@ -10,7 +10,7 @@
     <meta name="description" content="WWD 131 - Dynamic Web Fundamentals
         David Amador
         Website for travel tips and information about destinations in the US." />
-    <script src="scripts/advSeek.js" defer></script>
+    <script src="scripts/destinations.js" defer></script>
 </head>
 
 <body>
@@ -26,11 +26,23 @@
     </header>
     <main>
         <div>
-            <h2 id="heading">Home</h2>
+            <ul class="regions">
+                <li><a href="" id="all">All</a></li>
+                <li><a href="" id="west">West</a></li>
+                <li><a href="" id="south">South</a></li>
+                <li><a href="" id="midWest">Mid-West</a></li>
+                <li><a href="" id="northEast">North-East</a></li>
+                <h1 id="heading">All</h1>
+            </ul>
         </div>
         <div id="cards">
+
         </div>
     </main>
+    <footer>
+        <p>Adventure Seekers <span id="currentyear"></span> &copy; | David Amador | Idaho</p>
+        <p> Last Modified on <span id="lastModified"></span></p>
+    </footer>
 
 </body>
 

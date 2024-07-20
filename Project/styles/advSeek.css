@@ -132,6 +132,27 @@ footer {
     grid-column: 1/4;
 }
 
+.regions {
+    text-align: center;
+}
+
+.regions a {
+    display: flex;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    transition: 0.5s;
+    font-size: clamp(1.5rem, 2vmin, 1.5rem);
+}
+
+.regions li {
+    display: inline-flex;
+}
+
+
+
 @media only screen and (min-width: 40em) {
     .navigation {
         display: flex;
