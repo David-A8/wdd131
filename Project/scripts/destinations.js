@@ -76,7 +76,7 @@ var heading = document.getElementById('heading');
 
 wholeList.addEventListener("click", () => {
     event.preventDefault();
-    heading.textContent = 'All';
+    heading.textContent = 'Nationwide';
     createDestinationCard(destinations);
 })
 

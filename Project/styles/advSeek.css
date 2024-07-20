@@ -4,6 +4,7 @@
 :root {
     --heading-font: "Tilt Neon";
     --body-font: Calistoga;
+    background-color: rgb(243, 243, 243);
 }
 
 * {
@@ -24,7 +25,7 @@ header {
 header h1 {
     grid-column: 1/2;
     color: rgb(245, 245, 245);
-    margin-left: 30px;
+    margin-left: -30px;
 }
 
 header a {
@@ -41,6 +42,7 @@ body {
     height: auto;
 }
 
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -53,6 +55,7 @@ body {
 
 #menu::before {
     content: "≡";
+    padding-right: 5px;
 }
 
 nav {
@@ -95,7 +98,6 @@ nav a {
 .navigation a:hover,
 .navigation a:active {
     color: #907b45;
-    background-color: black;
 }
 
 .show li {
@@ -103,6 +105,7 @@ nav a {
 }
 
 #menu.show::before {
+    padding-right: 5px;
     content: "≡";
 }
 
@@ -124,9 +127,9 @@ footer {
     text-align: center;
     grid-row: 1/4;
     grid-column: 2/3;
-    color: #fff;
-    font-size: 3.5vw;
-    margin-top: 30px;
+    color: white;
+    font-size: 2rem;
+    margin-top: 100px;
 }
 
 #hero-box {
@@ -138,12 +141,17 @@ footer {
 
 .regions {
     text-align: center;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(243, 243, 243);
     margin-bottom: 5px;
 }
 
+.regions a:hover,
+.regions a:active {
+    color: #907b45;
+}
+
 .regions a {
-    display: flex;
+    display: block;
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
@@ -158,27 +166,37 @@ footer {
     display: inline-flex;
 }
 
-h1 {
+#heading {
     text-align: center;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    margin: 0;
+    max-width: 50%;
+    padding: 5px 0px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 #cards section {
     text-align: center;
     margin-top: 20px;
     font-family: var(--body-font);
-    color: rgb(42, 42, 42);
-    border-color: rgb(236, 236, 236);
+    color: white;
+    border-color: rgb(243, 243, 243);
     border-style: solid;
     border-width: thin;
     border-radius: 10px;
     margin: 1rem;
-    background-color: rgb(239, 238, 238);
+    background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #cards p {
     padding: 5px;
+}
+
+#cards h2 {
+    color: #907b45;
 }
 
 #cards img {
@@ -195,6 +213,10 @@ h1 {
 
 
 @media only screen and (min-width: 40em) {
+    header h1 {
+        margin-left: 30px;
+    }
+
     .navigation {
         display: flex;
     }
@@ -214,7 +236,9 @@ h1 {
     }
 
     #hero-msg {
-        margin-top: 120px;
+        margin-top: 100px;
+        font-size: 3.5vw;
+        color: rgb(255, 255, 255);
     }
 
     #cards section {
