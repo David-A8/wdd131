@@ -50,6 +50,16 @@ body {
 
 .tips {
     margin: 20px 300px 20px 300px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    padding-right: 5px;
+}
+
+.tips h1 {
+    color: #907b45;
+    font-family: var(--body-font);
 }
 
 .apps {
@@ -59,6 +69,7 @@ body {
 
 .apps a {
     text-decoration: none;
+    color: #907b45;
 }
 
 .list li {
