@@ -49,7 +49,7 @@ body {
 }
 
 .tips {
-    margin: 20px 300px 20px 300px;
+    margin: 20px 10px 20px 10px;
     border-radius: 10px;
     background-color: black;
     color: white;
@@ -80,7 +80,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 
 #menu {
     display: block;
@@ -282,6 +281,15 @@ footer {
 
     #cards section {
         margin: 1.5rem 12rem 1.5rem 12rem;
+    }
+
+    .tips {
+        margin: 1.67vw 20vw 1.67vw 20vw;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding-bottom: 20px;
+        padding-right: 5px;
     }
 }
 
