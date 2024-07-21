@@ -13,6 +13,12 @@
     box-sizing: border-box;
 }
 
+h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
 header {
     margin: 0;
     padding: 0;
@@ -35,6 +41,24 @@ header a {
 body {
     margin: 0;
     padding: 0;
+}
+
+.list {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.tips {
+    margin: 20px 300px 20px 300px;
+}
+
+.apps {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+.apps a {
+    text-decoration: none;
 }
 
 #hero-img {

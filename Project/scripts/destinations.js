@@ -119,7 +119,7 @@ function createDestinationCard(filteredDestinations) {
         state.innerHTML = `<span class="label">State:</span> ${place.state}`;
         region.innerHTML = `<span class="label">Region:</span> ${place.region}`;
         climate.innerHTML = `<span class="label">Climate:</span> ${place.climate}`;
-        sights.innerHTML = `<span class="label">Must visit places:</span>${place.sights}`;
+        sights.innerHTML = `<span class="label">Must visit places: </span>${place.sights}`;
         img.setAttribute("src", place.image1);
         img.setAttribute("alt", `${place.destination}`);
         img.setAttribute("loading", "lazy");
