@@ -51,7 +51,7 @@ body {
 .tips {
     margin: 20px 10px 20px 10px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(30, 29, 29);
     color: white;
     padding-bottom: 20px;
     padding-right: 5px;
@@ -224,7 +224,7 @@ footer {
     border-width: thin;
     border-radius: 10px;
     margin: 1rem;
-    background-color: black;
+    background-color: rgb(30, 29, 29);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -234,7 +234,7 @@ footer {
 }
 
 #cards h2 {
-    color: #907b45;
+    color: rgb(144, 123, 69);
 }
 
 #cards img {
@@ -248,7 +248,56 @@ footer {
     font-family: var(--heading-font);
 }
 
+.container input[type="submit"] {
+    border: none;
+    color: #ddd;
+    background-color: rgb(76, 65, 37);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: .25rem;
+    width: 8rem;
+    max-width: 425px;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
 
+fieldset {
+    text-align: center;
+    font-family: var(--heading-font);
+    margin: 1rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: rgb(197, 197, 197);
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    background-color: #eee;
+    display: inline-flexbox;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+input:required {
+    border-bottom: solid 2px red;
+}
+
+input:required:valid {
+    border-bottom: solid 2px green;
+}
 
 @media only screen and (min-width: 40em) {
     header h1 {
@@ -285,11 +334,15 @@ footer {
 
     .tips {
         margin: 1.67vw 20vw 1.67vw 20vw;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-        padding-bottom: 20px;
         padding-right: 5px;
+    }
+
+    fieldset {
+        margin: 0.5rem 12rem;
+    }
+
+    input[type="submit"] {
+        width: 8rem;
     }
 }
 
